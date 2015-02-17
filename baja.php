@@ -8,6 +8,7 @@ and open the template in the editor.
     $idUsuario = "10" ;
     require 'session.php';
 ?>
+
 <html>
     <head>
         <meta charset="UTF-8">
