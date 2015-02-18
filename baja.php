@@ -5,7 +5,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <?php
-    $idUsuario = "10" ;
+   
     require 'session.php';
 ?>
 
@@ -46,7 +46,7 @@ and open the template in the editor.
                 echo ' <br/>El campo apellidos ha sido completado. <font color="blue"><strong>'.$apellidos."</strong></font>";
             }
  */     
-            $insertar = mysqli_query($link, "INSERT INTO usuariosBaja SELECT * FROM `usuarios` WHERE idUsuario='".$idUsuario."'");
+            $insertar = mysqli_query($link, "INSERT INTO usuariosBaja SELECT * FROM `usuarios` WHERE idUsuario='".$_SESSION['userId']."'");
         ?>
  
 
